@@ -7,21 +7,52 @@
 
  <table>
      <caption>Produzidos x Vendidos por Loja</caption>
+    
+     <!-- Para facilitar a utilização de CSS na tabela, usa-se colgroup
+    que ira agrupar as colunas da tabela -->
+     <colgroup>
+        <!-- Primeira coluna quero ela sem nenhuma alteração -->
+        <col>
+        <!-- A segunda e a terceira colunas quero elas em vermelho.
+        No entanto, para não ficar escrevendo o mesmo código várias
+        vezes, para isso usamos o span para determinar quantas colunas
+        queremos. span = colspan -->
+        <col span="2" style="background-color: red;">
+        <col span="2" style="background-color: blue;">
+    </colgroup>
 
      <thead>
          <!-- rowspan -> Quantas linhas você quer que oculpe na tabela
               colspan -> Quantas colunas você quer que oculpe na tabela -->
          <tr>
              <th rowspan="2"></th>
-             <th colspan="2">Afonso Pena</th>
-             <th colspan="2">Antônia Pereira</th>
+             <th colspan="2" scope="colgroup">Afonso Pena</th>
+             <th colspan="2" scope="colgroup">Antônia Pereira</th>
          </tr>
 
          <tr>
-             <th>Produzidos</th>
-             <th>Vendidos</th>
-             <th>Produzidos</th>
-             <th>Vendidos</th>
+             <th scope="col">Produzidos</th>
+             <th scope="col">Produzidos</th>
+             <th scope="col">Vendidos</th>
+             <th scope="col">Vendidos</th>
          </tr>
      </thead>
+
+     <tbody>
+         <tr>
+             <th scope="row">Vassouras</th>
+             <td>50</td>
+             <td>30</td>
+             <td>20</td>
+             <td>20</td>
+         </tr>
+
+         <tr>
+             <th scope="row">Baldes</th>
+             <td>10</td>
+             <td>10</td>
+             <td>30</td>
+             <td>25</td>
+         </tr>
+     </tbody>
  </table>
