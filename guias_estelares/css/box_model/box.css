@@ -1,0 +1,15 @@
+h1 {
+    border: 1px solid red;
+    margin: 200px;
+    padding: 60px;
+}
+
+p {
+    color: greenyellow;
+    font-size: 100pt;
+}
+
+button {
+    color: white;
+    background-color: blue;
+}

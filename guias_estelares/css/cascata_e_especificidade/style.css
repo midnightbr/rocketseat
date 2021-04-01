@@ -1,0 +1,27 @@
+/* Calculo de força 
+    Quanto mais força a declaração tiver,
+    sera elá que ira prevalecer em cima das outras.*/
+h1#my-title {
+    color: gray;
+} /* Força igual a 100*/
+
+#my-title,
+#my-title strong{
+    color: lawngreen;
+}
+
+.title {
+    color: red;
+} /*Força igual a 10*/
+
+h1 {
+    color: green;
+} /*Força igual a 1*/
+
+p.title#my-title {
+    color: indigo;
+} /*Força igual a 111*/
+
+* {
+    color: blue;
+} /*Força igual a 0*/

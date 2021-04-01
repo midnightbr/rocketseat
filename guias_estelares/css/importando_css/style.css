@@ -1,0 +1,12 @@
+/* @import, não é muito recomendado, já que vai deixar sua página um pouco
+mais lenta. Preferivel que usa sempre que possivel a importação por link no
+HTML */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+
+h2 {
+    color: gray;
+}
+
+strong {
+    color: red;
+}
