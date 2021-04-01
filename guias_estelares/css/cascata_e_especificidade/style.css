@@ -1,3 +1,9 @@
+/* Exemplo de como o !important funciona. 
+Ele força o valor em cima de todos os atributos.*/
+/*h1 {
+    color:mediumblue !important;
+}*/
+
 /* Calculo de força 
     Quanto mais força a declaração tiver,
     sera elá que ira prevalecer em cima das outras.*/
