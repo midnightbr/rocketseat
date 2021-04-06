@@ -65,3 +65,20 @@ students = [
     student2
 ]
 console.log(students)
+
+/* 
+    9 - Sem rodar o código responda qual é a reposta do
+    código abaixo e por que? Após sua resposta, rode o código e veja
+    se você acertou. 
+    
+    console.log(a)
+    var a = 1
+*/
+/* Reposta: Ira aparecer no console a variavel 'a' como indefinida, 
+devido a variavel ser global e ser declarada como var. E como o console
+log está antes da atribuição do valor, então a variável ainda não recebeu seu valor.
+Sofrendo assim o hoisting.
+*/
+
+console.log(a)
+var a = 1

@@ -5,41 +5,37 @@ let weight
 console.log(typeof weight)
 
 //3 - Declare uma variável e atribua valores para cada um dos dados:
-let name
-let age
-let stars
-let isSubscribed
+let name = "Mayk"
+let age = 23
+let stars = 4.8
+let isSubscribed = true
 
-name = "Midnight"
-age = 24
-stars = 4.92
-isSubscribed = true
-
-console.log(name, age, stars, isSubscribed)
 
 //4 - A variável student abaixo é de que tipo de dados?
-// let student = {}
-// R: Variável do tipo object
 let student = {}
 console.log(typeof student)
 
 // 4.1 - Atribua a ela as mesmas propriedades e valores do exercício 3.
 student = {
-    name: "Duck",
-    age: 2,
-    stars: 4,
-    weight: 17.5,
-    isSubscribed: false
+    name: "Mayk",
+    age: 23,
+    stars: 4.8,
+    isSubscribed: true,
 }
 console.log(student)
 
 /* 4.2 - Mostre no console a seguinte mensagem:
     <name> de idade <age> pesa <weight> kg.*/
-console.log(`${student.name} de idade ${student.age} anos, pesa ${student.weight}kg.`)
+    student = {
+        name: "Mayk",
+        age: 23,
+        weight: 74.8,
+        isSubscribed: true,
+    }
+console.log(`${student.name} de idade ${student.age} pesa ${student.weight}kg.`)
 
 // 5 - Declare uma variável do tipo array, de nome students e atribua a ela nenhum valor, ou seja, somente o array vazio.
 let students = []
-console.log(typeof students)
 
 // 6 - Reatribua valor para a variável acima, colocando dentro dela o objeto student da questão 4. (Não copie e cole o objeto, mas usar o objeto criado e inserir ele no array)
 students = [
@@ -51,17 +47,13 @@ console.log(students)
 console.log(students[0])
 
 // 8 - Crie um novo student e coloque na posição do array students
-// Criando novo objeto
-let student2 = {
-    name: "Duquesa",
-    age: 1.8,
-    stars: 4.8,
-    weight: 4.5,
-    isSubscribed: false
+const john = {
+    name: "John",
+    age: 23,
+    weight: 74.8,
+    isSubscribed: true,
 }
-// Adicionando novo objeto no arrat
-students = [
-    student,
-    student2
-]
+
+// Forma de adicionar o objeto no array que ainda não foi mostrado no curso
+students[1] = john
 console.log(students)
