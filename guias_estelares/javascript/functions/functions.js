@@ -74,3 +74,49 @@ function createThink2() {
 
 console.log(createThink2())
 console.log(subject)
+
+// -----------------------------------------------------------------------
+// function hoisting
+sayMyName()
+
+function sayMyName() {
+    console.log('Marcos')
+}
+
+// Essa função abaixo não vai sofrer hoisting, pois foi declarado como const. Além do mais, nesse caso myName não é uma função, e sim uma variavel que recebe uma função sem nome
+// myName()
+
+// const myName = function () {
+//     console.log('Fabiana')
+// }
+
+// Aqui o hoisting ocorre, no então como teste não é uma função e sim uma variavel, acarretara em um erro.
+// teste()
+
+var teste = function () {
+    console.log('Duck e Duquesa')
+}
+
+// -----------------------------------------------------------------------
+// Arrow function
+
+const tekur = () => {
+    console.log('Testando arrow function. Forma mais moderna de criar funções no JS.')
+}
+
+console.log(tekur)
+
+// -----------------------------------------------------------------------
+// Callback function
+// Nada mais é do que uma função chamando para executar outra função
+function callBack(name) {
+    console.log('Antes de executar a função callback')
+    name()
+    console.log('Depois de executar a callback')
+}
+
+callBack(
+    () => {
+        console.log('Executando uma callback')
+    }
+)
