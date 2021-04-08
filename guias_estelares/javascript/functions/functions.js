@@ -120,3 +120,38 @@ callBack(
         console.log('Executando uma callback')
     }
 )
+
+// -----------------------------------------------------------------------
+/*
+    Function() constructor
+    
+    * expressão new
+    * criar um novo objeto
+    * this keyword
+*/
+
+// Molde para poder criar um novo objeto com essas propriedades
+// Colocar o nome da function em maiusculo é uma boa pratica e altamente recomendado, quando se trata de function constructor
+function Person(name) {
+    this.name = name
+    this.walk = function() {
+        return this.name + " está andando."
+    }
+}
+
+// Criando o novo objeto
+const marcos = new Person("Marcos")
+const joao = new Person("João")
+
+// Verificando no console
+console.log(marcos.walk())
+console.log(joao.walk())
+
+// Function constructor já existente no JS
+// string
+let name = new String("Marcos")
+console.log(name)
+
+// Date
+let date = new Date("2021-04-08")
+console.log(date)
