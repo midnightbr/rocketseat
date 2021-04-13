@@ -13,5 +13,22 @@ console.log(string + String(number))
 // Contar quantos caracteres tem uma palavra e quantos dígitos tem um número
 let word = "Paralelepipedo"
 console.log(word.length)
-let number = 1234
-console.log(String(number).length) // Como números não recebi a função length, o primeiro passo é converter do tipo number para o tipo string.
+let number2 = 1234
+console.log(String(number2).length) // Como números não recebi a função length, o primeiro passo é converter do tipo number para o tipo string.
+
+// Transformar um número quebrado com 2 casas decimais e trocar ponto por vírgula
+let number3 = 345.334524
+// Comando .toFixed() fixa a quantidade de casas decimais que estaram sendo exibidos
+// Já o replace como já vimos, substituira o "."(ponto) por ","(vírgula)
+console.log(number3.toFixed(2).replace(".", ","))
+/* Obs: Quando trocado de ponto para virgula, o número não é mais da classe number
+ e passa a ser da classe sting. 
+Devido ao fato de que não existe virgula na classe number.*/
+console.log(Number(number3.toFixed(2).replace(".", ",")))
+
+// Transforme letras minúsculas em maiúsculas. Faça o contrário disso também.
+let word2 = "Programar é muito bacana!"
+// Deixando as letras todas maiúsculas.
+console.log(word2.toUpperCase())
+// Deixando as letras todas minúsculas
+console.log(word2.toLowerCase())
