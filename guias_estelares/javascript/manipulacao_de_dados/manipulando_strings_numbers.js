@@ -32,3 +32,11 @@ let word2 = "Programar é muito bacana!"
 console.log(word2.toUpperCase())
 // Deixando as letras todas minúsculas
 console.log(word2.toLowerCase())
+
+// Verificando se o texto contém uma palavra especifica
+let phrase = "Eu quero viver!"
+console.log(phrase.includes("Amor"))
+phrase = "Eu quero viver o amor!"
+// Devido ao .includes ser case_sensitive, as letras maiusculas e minusculas tem diferença
+console.log(phrase.includes("Amor"))
+console.log(phrase.includes("amor"))
