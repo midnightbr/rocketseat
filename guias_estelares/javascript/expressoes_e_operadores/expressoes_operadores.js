@@ -124,3 +124,74 @@ console.log(one >= two) //false
 console.log(one < two) //true
 // <= Menos igual
 console.log(one <= two) //true
+
+// Operadores de atribuição (Assignment)
+let x
+
+console.log(x)
+
+// assignment
+x = 1
+console.log('assignment', x)
+
+// addition assignment
+x += 2
+console.log('addition assignment', x)
+
+// subtraction assignment
+x -= 1
+console.log('subtraction assignment', x)
+
+// multiplication assignment
+x *= 2
+console.log('multiplication assignment',x)
+
+// division assignment
+x /= 2
+console.log('division assignment',x)
+
+/* Operadores lógicos (logica operators)
+  2 valores booleanos, quando verificados,
+  resultará em verdadeiro ou falso*/
+
+  let pao = true
+  let queijo = true
+
+// AND &&
+console.log('Tem pão e queijo?', pao && queijo)
+
+pao = true
+queijo = false
+// OR ||
+console.log('Tem pão ou queijo', pao || queijo)
+
+// NOT ! - Negação, troca o valor da variavel
+// Se tiver true, transforma em false e assim vice versa
+console.log(!pao, !queijo)
+
+/*
+    Operador Condicional (Ternário)
+    
+    Dependendo da condição, nós receberemos valores diferentes
+    Condição então valor 1 se não valor 2
+    Condition ? value1 : value2
+*/
+
+// Exemplos
+// Café da manhã top
+
+let niceBreakfast = pao && queijo ? 'Café top' : 'Café ruim'
+console.log(niceBreakfast)
+
+pao = true
+queijo = true
+niceBreakfast = pao && queijo ? 'Café top' : 'Café ruim'
+console.log(niceBreakfast)
+
+// Maior de 18
+let canDrive = age >= 18 ? 'Can drive' : 'Cannot drive'
+console.log(canDrive)
+
+age = 16
+canDrive = age >= 18 ? 'Can drive' : 'Cannot drive'
+console.log(canDrive)
