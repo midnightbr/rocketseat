@@ -51,3 +51,19 @@ console.log(calculate(5, '-', 2))
 console.log(calculate(10, '*', 12))
 console.log(calculate(15, '/', 5))
 console.log(calculate(12, '^^', 2))
+
+// Throw
+function sayMyName(name = '') {
+    if(name === '') {
+        throw new Error("Nome é obrigatório.")
+    }
+
+    console.log('depois do erro')
+}
+// try...catch
+try {
+    sayMyName()
+} catch(e) {
+    console.log(e)
+}
+console.log('após a função de erro')
