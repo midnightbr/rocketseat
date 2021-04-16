@@ -12,9 +12,9 @@ let notaC
 let notaFinal
 
 // Teste do código
-// notaA = 90
-// notaB = 90
-// notaC = 95
+notaA = 90
+notaB = 90
+notaC = 95
 
 notaFinal = (notaA + notaB + notaC) / 3
 
