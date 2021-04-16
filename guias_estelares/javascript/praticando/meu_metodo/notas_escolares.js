@@ -4,6 +4,8 @@
     Esse algoritmo transforma notas do sistema numérico 
     para o sistema de notas em carcateres tipo A B C
 */
+console.log('Meu metodo')
+
 let notaA
 let notaB
 let notaC
