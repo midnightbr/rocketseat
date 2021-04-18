@@ -55,16 +55,16 @@ let booksAugusto = []
 
 // Metodo para determinar a quantidade de categorias.
 let category = booksByCategory.length - 1
-let categorys = 0
+// let categorys = 0
 let categoryBook = []
 
 for(obj = 0; obj <= category; obj++) {
     // Separando cada categoria do array para ser processada
-    objeto = booksByCategory[obj]
+    let objeto = booksByCategory[obj]
     // console.log(objeto)
 
     // Coletando os livros cadastrados de cada categoria
-    books = objeto.books
+    let books = objeto.books
     // console.log(books)
 
     // Quantidade de Livros dentro da categoria
@@ -104,12 +104,14 @@ for(obj = 0; obj <= category; obj++) {
         }
         
     }
-    categorys++
+    // categorys++
     categoryBook.push(contador)
- }
-
-// console.log(totAuthors)
-// console.log(booksAugusto)
-// console.log(booksByCategory.length)
-// console.log(totAuthor)
-// console.log(categoryBook)
+    // Mostrando quantos livros tem cada categoria
+    console.log(`Categoria ${objeto.category} tem quantos livros? ${categoryBook[obj]}`)
+}
+// Adicionando mais 1 para a variavel retornar ao valor original
+category += 1
+// Mostrando total de categorias
+console.log(`Quantas categorias existem? ${category}`)
+console.log(`Quantos autores estão na lista? ${totAuthors}`)
+console.log(`Quais livros são do Augusto Cury? ${booksAugusto}`)
