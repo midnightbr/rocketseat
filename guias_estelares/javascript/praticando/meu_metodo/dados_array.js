@@ -93,7 +93,7 @@ for(obj = 0; obj <= category; obj++) {
             totAuthors++
         }
 
-        augusto = author == 'Augusto Cury'
+        let augusto = author == 'Augusto Cury'
         // console.log(totAuthor)
         // console.log(augusto)
 
@@ -115,3 +115,47 @@ category += 1
 console.log(`Quantas categorias existem? ${category}`)
 console.log(`Quantos autores estão na lista? ${totAuthors}`)
 console.log(`Quais livros são do Augusto Cury? ${booksAugusto}`)
+
+function authorBooks(nameAuthor) {
+    let booksAuthor = []
+    category -= 1
+
+    for(obj = 0; obj <= category; obj++) {
+        // Separando cada categoria do array para ser processada
+        let objeto = booksByCategory[obj]
+
+        // Coletando os livros cadastrados de cada categoria
+        let books = objeto.books
+    
+        // Quantidade de Livros dentro da categoria
+        let qtdBook = books.length - 1
+    
+        for(title = 0; title <= qtdBook; title++) {
+            // Separando os livros cadastrados
+            titles = books[title]
+
+            // Coletando e separando os nomes dos autores de cada livro
+            author = titles.author
+    
+            // Verificando se o nome do author já foi adicionado a lista e contando
+            // a quantidade de autores
+            let testeAuthor
+            testeAuthor = totAuthor.indexOf(author)
+            if (testeAuthor < 0) {
+                totAuthor.push(author)
+                totAuthors++
+            }
+    
+            let name = author == nameAuthor
+    
+            if(name) {
+                book = titles.title
+                booksAuthor.push(titles.title)
+            }
+            
+        }
+    }
+    return booksAuthor
+}
+
+console.log(authorBooks('George S. Clason'))
